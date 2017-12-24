@@ -11,8 +11,10 @@
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/normalize.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="css/sakura.css" type="text/css">
+        <link rel="stylesheet" href="css/snow.css" type="text/css">
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -20,10 +22,25 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <h1>Happy Holidays, play a beat.</h1>
+
+        <div>
+            <h3>Beats</h3>
+            <button onclick="playBeat('beat2')">Loop 1</button>
+            <button onclick="playBeat('beat1')">Loop 2</button>
+        </div>
+        <div>
+            <h3>Sound Effects</h3>
+            <button onclick="playSound('hohoho')">Ho ho ho</button>
+            <button onclick="playSound('you')">Yoooooou</button>
+        </div>
+
+
+        <!-- End Content -->
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="node_modules/howler/dist/howler.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
